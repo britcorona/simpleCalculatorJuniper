@@ -10,6 +10,12 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
+            //string prompt = "[x] > ";
+            //Console.WriteLine("Is this working?");
+            //Console.Write(prompt);
+
+            //Console.WriteLine("Press any key to exit...");
+            //Console.ReadKey();
         }
     }
 }
