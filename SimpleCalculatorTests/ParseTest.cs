@@ -23,21 +23,43 @@ namespace SimpleCalculatorTests
             Assert.AreEqual("1 + 1", parse_string.Input);
         }
 
+        //[TestMethod]
+        //public void FoundPositionOfAllTheThings()
+        //{
+        //    Parse parse = new Parse();
+        //    var expected = 10;
+        //    var actual = parse.FindPositions();
+        //    Assert.AreEqual(expected, actual);
+        //}
+
         [TestMethod]
-        public void TakeStringApart()
+        public void FindFirstTerm()
         {
-            //string[] stringSeparators = new string[] { " " };
-            //string[] result;
-            //string string_split = "2 + 2";
+            String input = "20+59";
+            Parse parse = new Parse();
+            String expected = "20";
+            String actual = parse.FirstTerm(input);
+            Assert.AreEqual(expected, actual);
+        }
 
-            //result = string_split.Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
+        [TestMethod]
+        public void FindSecondTerm()
+        {
+            String input = "20+59";
+            Parse parse = new Parse();
+            String expected = "59";
+            String actual = parse.SecondTerm(input);
+            Assert.AreEqual(expected, actual);
+        }
 
-            //string[] expected = new string[] { "2", "+", "2"};
-
-            //Assert.AreEqual(result, expected);
-
-            Parse parse_string = new Parse();
-            
+        [TestMethod]
+        public void FindSymbol()
+        {
+            String input = "20+59";
+            Parse parse = new Parse();
+            String expected = "+";
+            String actual = parse.Symbol(input);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

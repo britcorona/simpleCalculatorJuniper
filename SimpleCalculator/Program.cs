@@ -10,6 +10,8 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
+            Parse parse = new Parse();
+            //parse.FindPositions("2+10");
             //string prompt = "[x] > ";
             //Console.WriteLine("Is this working?");
             //Console.Write(prompt);
